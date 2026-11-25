@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jef (สรศักดิ์) — IT Portfolio</title>
+  <title>ศรศักดิ์ จันทร์ชุ่ม (1680704192) — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -236,11 +236,14 @@
       border-radius: var(--radius);
       padding: 24px;
       box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card h3 {
       font-size: 1.08rem;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .tags {
@@ -268,7 +271,8 @@
     .project-top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+      gap: 10px;
       margin-bottom: 12px;
     }
 
@@ -279,12 +283,27 @@
       background: var(--primary-soft);
       padding: 4px 10px;
       border-radius: 999px;
+      white-space: nowrap;
     }
 
     .card p {
       color: var(--muted);
       font-size: 0.94rem;
       margin-bottom: 16px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
     }
 
     /* Contact */
@@ -304,6 +323,13 @@
     .contact-box p {
       color: var(--muted);
       margin-top: 4px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      color: var(--primary);
     }
 
     footer {
@@ -329,7 +355,7 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="#" class="brand">Jef<span>.</span>Portfolio</a>
+      <a href="#" class="brand">ศรศักดิ์<span>.</span>Portfolio</a>
       <nav class="nav-links">
         <a href="#about">เกี่ยวกับฉัน</a>
         <a href="#skills">ทักษะ</a>
@@ -342,11 +368,11 @@
   <main>
     <section class="container hero" id="about">
       <div>
-        <div class="badge">Information Technology · Bangkok University</div>
-        <h1>สวัสดีครับ ผมสรศักดิ์ (เจฟ)</h1>
+        <div class="badge">รหัสนักศึกษา 1680704192 · เทคโนโลยีสารสนเทศ</div>
+        <h1>สวัสดีครับ ผมศรศักดิ์ จันทร์ชุ่ม</h1>
         <p>
-          นักศึกษาสาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ ที่สนใจด้านฐานข้อมูล การออกแบบ UI/UX
-          การวิเคราะห์ข้อมูล และการสร้างเว็บแอปพลิเคชัน รวมถึงการทำธุรกิจออนไลน์และโปรเจกต์สร้างสรรค์
+          นักศึกษาสาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ ที่สนใจด้านการออกแบบ UI Specification
+          ฐานข้อมูล การวิเคราะห์ข้อมูล และการพัฒนาเว็บแอปพลิเคชัน รวมถึงการทำธุรกิจออนไลน์และโปรเจกต์สร้างสรรค์
         </p>
         <div class="actions">
           <a href="#projects" class="btn btn-primary">ดูผลงานของฉัน</a>
@@ -355,13 +381,13 @@
       </div>
 
       <aside class="profile-card">
-        <div class="avatar">JF</div>
-        <h2>สรศักดิ์ จันทร์จุ่ม (เจฟ)</h2>
-        <div class="role">IT Student · Database &amp; Web Prototyping</div>
+        <div class="avatar">ศศ</div>
+        <h2>ศรศักดิ์ จันทร์ชุ่ม</h2>
+        <div class="role">รหัสนักศึกษา: 1680704192</div>
         <ul class="stat-list">
           <li><strong>สาขา:</strong> เทคโนโลยีสารสนเทศ</li>
-          <li><strong>แนวทางการเรียน:</strong> ลงมือทำจริง ลองผิดลองถูก และต่อยอดจากโปรเจกต์</li>
-          <li><strong>สิ่งที่ชอบ:</strong> Data, Web UI, E-Commerce &amp; Cars</li>
+          <li><strong>อีเมล:</strong> jefrrop@gmail.com</li>
+          <li><strong>สิ่งที่สนใจ:</strong> UI Design, Database, Web &amp; Commerce</li>
         </ul>
       </aside>
     </section>
@@ -369,34 +395,40 @@
     <section class="container" id="skills">
       <div class="section-head">
         <h2>ทักษะและความสามารถ</h2>
-        <p>เครื่องมือและแนวคิดที่ใช้ในการเรียนและพัฒนาโปรเจกต์</p>
+        <p>เครื่องมือและทักษะที่ใช้ในการเรียนและพัฒนาโปรเจกต์</p>
       </div>
       <div class="skills-grid">
         <div class="card">
-          <h3>Database &amp; Data</h3>
-          <div class="tags">
-            <span class="tag">SQLite</span>
-            <span class="tag">SQL Server</span>
-            <span class="tag">JSON / NoSQL</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">Python / Colab</span>
+          <div>
+            <h3>System &amp; UI Design</h3>
+            <div class="tags">
+              <span class="tag">UI Specification</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Bubble.io</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
           </div>
         </div>
         <div class="card">
-          <h3>Web &amp; UI Design</h3>
-          <div class="tags">
-            <span class="tag">HTML5 / CSS3</span>
-            <span class="tag">Figma</span>
-            <span class="tag">Bubble.io</span>
-            <span class="tag">GitHub Pages</span>
+          <div>
+            <h3>Database &amp; Data</h3>
+            <div class="tags">
+              <span class="tag">SQLite</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">JSON / NoSQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Google Colab</span>
+            </div>
           </div>
         </div>
         <div class="card">
-          <h3>Commerce &amp; Operations</h3>
-          <div class="tags">
-            <span class="tag">Online Shop</span>
-            <span class="tag">Order &amp; Shipping</span>
-            <span class="tag">Content &amp; Live</span>
+          <div>
+            <h3>Deployment &amp; Business</h3>
+            <div class="tags">
+              <span class="tag">GitHub Pages</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Online Shop</span>
+            </div>
           </div>
         </div>
       </div>
@@ -405,51 +437,60 @@
     <section class="container" id="projects">
       <div class="section-head">
         <h2>ผลงานและโปรเจกต์</h2>
-        <p>ตัวอย่างงานและสิ่งที่ได้ทดลองทำ</p>
+        <p>งานโปรเจกต์และผลงานที่จัดทำ</p>
       </div>
       <div class="projects-grid">
         <article class="card">
-          <div class="project-top">
-            <h3>My Shop JSON Storefront</h3>
-            <span class="pill">IT234</span>
+          <div>
+            <div class="project-top">
+              <h3>ระบบสารสนเทศเพื่อจัดการงานซ่อมบำรุงคอมพิวเตอร์ (รพ.ภัทร-ธนบุรี)</h3>
+              <span class="pill">System Design</span>
+            </div>
+            <p>
+              โปรเจกต์ออกแบบระบบและเอกสาร Requirement Specification &amp; Software Design โดยมีหน้าที่รับผิดชอบด้านการจัดทำ UI Specification และ Report Specification
+            </p>
+            <div class="tags">
+              <span class="tag">UI Specification</span>
+              <span class="tag">Report Spec</span>
+              <span class="tag">Software Design</span>
+            </div>
           </div>
-          <p>
-            หน้าร้านค้าออนไลน์ที่ดึงข้อมูลจากไฟล์ <code>data.json</code> แบบเรียลไทม์ พร้อมระบบค้นหา กรองแท็ก และแสดงโครงสร้าง Document JSON ควบคู่กัน
-          </p>
-          <div class="tags">
-            <span class="tag">JSON</span>
-            <span class="tag">HTML/CSS</span>
-            <span class="tag">GitHub Pages</span>
+          <a href="https://canva.link/qx9o5fnsauv89p5" target="_blank" rel="noopener noreferrer" class="project-link">
+            เปิดดูผลงานโปรเจกต์บน Canva →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="project-top">
+              <h3>My Shop JSON Storefront</h3>
+              <span class="pill">IT234</span>
+            </div>
+            <p>
+              หน้าร้านค้าออนไลน์บน GitHub Pages ที่ดึงข้อมูลสินค้าจากไฟล์ <code>data.json</code> แบบ Document พร้อมระบบค้นหา กรองแท็ก และแสดงโครงสร้าง JSON
+            </p>
+            <div class="tags">
+              <span class="tag">JSON</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
           </div>
         </article>
 
         <article class="card">
-          <div class="project-top">
-            <h3>Web Prototyping &amp; UI Study</h3>
-            <span class="pill">UI / Web</span>
-          </div>
-          <p>
-            ออกแบบ Wireframe และต้นแบบเว็บไซต์ด้วย Figma และ Bubble.io พร้อมวิเคราะห์หลักการออกแบบส่วนติดต่อผู้ใช้ให้ใช้งานง่ายและชัดเจน
-          </p>
-          <div class="tags">
-            <span class="tag">Figma</span>
-            <span class="tag">Bubble.io</span>
-            <span class="tag">UI/UX</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="project-top">
-            <h3>Data &amp; Dashboard Practice</h3>
-            <span class="pill">Data</span>
-          </div>
-          <p>
-            ฝึกออกแบบฐานข้อมูลเชิงสัมพันธ์ ทดลองเปรียบเทียบโมเดลข้อมูลใน Google Colab และสรุปภาพรวมข้อมูลผ่าน Dashboard บน Power BI
-          </p>
-          <div class="tags">
-            <span class="tag">SQL</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">Google Colab</span>
+          <div>
+            <div class="project-top">
+              <h3>Web Prototyping &amp; Data Practice</h3>
+              <span class="pill">IT Coursework</span>
+            </div>
+            <p>
+              ออกแบบต้นแบบเว็บไซต์ด้วย Figma และ Bubble.io รวมถึงฝึกจัดการฐานข้อมูลเชิงสัมพันธ์และสรุปผลข้อมูลด้วย SQL และ Power BI
+            </p>
+            <div class="tags">
+              <span class="tag">Figma</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+            </div>
           </div>
         </article>
       </div>
@@ -459,11 +500,12 @@
       <div class="contact-box">
         <div>
           <h2>ช่องทางติดต่อ</h2>
-          <p>พูดคุยเรื่องโปรเจกต์ งานกลุ่ม หรือแลกเปลี่ยนความรู้ด้านเทคโนโลยีได้เลยครับ</p>
+          <p>สามารถติดต่อสอบถามหรือพูดคุยเรื่องงานและโปรเจกต์ได้ผ่านช่องทางด้านล่างครับ</p>
+          <a href="mailto:jefrrop@gmail.com" class="contact-email">jefrrop@gmail.com</a>
         </div>
         <div class="actions">
-          <a href="mailto:your-email@example.com" class="btn btn-primary">อีเมล</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+          <a href="mailto:jefrrop@gmail.com" class="btn btn-primary">ส่งอีเมล (jefrrop@gmail.com)</a>
+          <a href="https://canva.link/qx9o5fnsauv89p5" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">ผลงาน Canva</a>
         </div>
       </div>
     </section>
@@ -471,7 +513,7 @@
 
   <footer>
     <div class="container">
-      © 2026 Sorasak (Jef) · Deployed with GitHub Pages
+      © 2026 ศรศักดิ์ จันทร์ชุ่ม (1680704192) · jefrrop@gmail.com
     </div>
   </footer>
 </body>
